@@ -1,2 +1,2 @@
 # node-npm-guide
-about node, npm, express other js stuff
+about js, node, npm, express and other js stuff etc

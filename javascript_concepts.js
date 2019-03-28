@@ -54,9 +54,26 @@ var is used to store a value which can be used later on any where.
 
 let is used to store a value which can be changed only in the scope let was assigned the value.
 
-const doesn't allow the modification in the assigned values anytime and anywhere in the module.
+const doesnt allow the modification to the assigned values anytime and anywhere throughout the whole module.
 
 
 _____in some scenarios they may have the same meaning, it depends on you which to use.
 
 
+=================================================================================================
+
+var arr = Array(5).fill(2);
+or
+var arr = [1,2,3];
+
+arr.map((x)=>{x*x});
+
+The map() method creates a new array with the results of calling a function for every array element
+
+The map() method calls the provided function once for each element in an array, in order
+
+Note: map() does not execute the function for array elements without values
+
+Note: map() does not change the original array
+
+==================================================================================================
