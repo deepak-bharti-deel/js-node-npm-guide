@@ -6,9 +6,9 @@ NPM, Node, NVM instalation
 #2 Install node (You can install any node version)
     nvm install <node_version>
 
-#4 nvm ls-remote , This command tells all the node versions available in cloud
-
 #3 nvm ls , This command tells all the node versions installed
+
+#4 nvm ls-remote , This command tells all the node versions available in cloud
 
 #5 nvm use <node_version> , to use any other node version 
 
@@ -19,7 +19,7 @@ NPM, Node, NVM instalation
 // by default nvm uses default node version 
 
 // You need not to install npm separately, it comes with node installatio i.e when you do
-// nvm install <node_version>,  with that node version comes npm as well :-)
+// nvm install <node_version> with that node version comes npm as well :-)
 
 ========================================================================================
 
@@ -42,7 +42,7 @@ But what is a runtime environment?
     That is why different browsers may show different result for same js code. 
     
     Before 2009 the only way to execute js code was browsers, but in 2009 Ryan Dahl came up with an idea 
-    to run js code out of browsers. So he took the chrome's v8 js engine(which is the fastest js engine) 
+    to run js code out of browsers. So he took the chrome's v8 js engine(which is fastest js engine) 
     and embedded it into a c++ program which he called node.exe or Node.
 
 So similar to a browser Node is a runtime environment for javascript code which contains a js engine
@@ -71,15 +71,14 @@ JavaScript source code grows.
 
 Here's one way to set it up:
 
-$ npm init -y    , in your project folder (don't skip this step!)
+$ npm init -y in your project folder (don't skip this step!)
 $ npm install terser
 
 Now, to minify a file called like_button.js, run in the terminal:
 
 $ npx terser -c -m -o like_button.min.js -- like_button.js
 
-This will produce a file called like_button.min.js with the minified code in the same directory. 
-If you're typing this often, you can create an npm script to give this command a name.
+This will produce a file called like_button.min.js with the minified code in the same directory. If you're typing this often, you can create an npm script to give this command a name.
 
 
 Adding custom npm scripts
