@@ -1,0 +1,10 @@
+
+
+
+
+
+joi 		= joi is used for input validation.
+
+nodemon     = monitors node app continuously and restarts the node server as soon as the changes occur.
+
+express     =  a web framework

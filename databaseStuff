@@ -1,0 +1,73 @@
+npm i mongodb  , installs mongodb
+
+sudo mkdir -p /data/db   , this dir contains all database docs
+
+chown -R `id un` /data/db   , set appropriate permission for data dir
+
+mongod   , starts mongodb server on a fixed port_nu
+
+
+========================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+SQL VS NOSQL VS HYBRID
+
+
+SQL - Normalisation, tables(documents) connected through some id(reference) etc
+
+PROS - Provides CONSISTENCY
+CONS - SLOWER PERFORMANCE 
+      <as for getting author of a course you need to first find course then using reference to
+        author you will find author details in next query >
+
+let author = {
+    name:"sfs"
+}
+
+let course = {
+    author:id,
+}
+
+
+========================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+EMBEDDED
+NOSQL - Denormalisation, embed a document inside other
+
+PROS - Provides PERFORMACE
+CONS - Tardeoff with CONSISTENCY 
+      <as for getting author of a course you need not to make another any query as author is embedded inside course
+      but if u have to change an author detail u need to change it in every course that author is 
+      embedded, and if u forget to change a cousre detail with same author that can cause bad result so 
+      it inconsistence >
+
+let author = {
+    name:"sfs"
+}
+
+let course = {
+    author:{
+        name:""  // author embedded in course .. u get author details with course in single query
+    }
+}
+
+========================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+HYBRID
+
+let author = {
+    name:"sfs",
+    // 50 more properties
+}
+
+let course = {
+    author:{
+        name:""  // author embedded in course .. u get author details with course in single query
+        // don't include all properties of author 
+    }
+}
+
+
+such approach is called HYBRID approach
+
+========================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
