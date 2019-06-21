@@ -21,6 +21,10 @@ NPM, Node, NVM instalation
 // You need not to install npm separately, it comes with node installatio i.e when you do
 // nvm install <node_version> with that node version comes npm as well :-)
 
+#8  uninstalling nvm, use following 2 commands 
+$ nvm use system
+$ npm uninstall -g a_module
+
 ========================================================================================
 
 What is Node ?
