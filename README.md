@@ -25,13 +25,13 @@ NPM, Node, NVM instalation
     - nvm use system
     - npm uninstall -g a_module
 
-========================================================================================
+### FAQs
 
 What is Node ?
 
     Node is a runtime environment for executing javascript code.
 
-But what is a runtime environment?
+What is a runtime environment?
 
     Well, Before node application were build in javascript which run into browsers. 
     
@@ -55,19 +55,18 @@ is not available in browsers.
 
 So both node and browsers have a js engine but provide different runtime environment.
 
-============================================================
+### Miscellaneous
 
 
 $ npm install package_name --save        
-   -- save option not only installs the package but also saves it as a dependency in package.json file.
+   
+    -- save option not only installs the package but also saves it as a dependency in package.json file.
 
 
-$jshint js_file.js
-  tells the javascripts related errors in the js_file module
+$ jshint js_file.js
+   
+    tells the javascripts related errors in the js_file module
 
-
-
-==================================================================
 
 In production, it is recommended to minify any JavaScript code that is included with your application. 
 Minification can help your website load several times faster, especially as the size of your 
