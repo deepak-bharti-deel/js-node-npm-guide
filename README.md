@@ -16,14 +16,14 @@ NPM, Node, NVM instalation
 
 7. nvm alias latest <node_version>
 
-// by default nvm uses default node version 
+    by default nvm uses default node version 
 
-// You need not to install npm separately, it comes with node installatio i.e when you do
-// nvm install <node_version> with that node version comes npm as well :-)
+    You need not to install npm separately, it comes with node installatio i.e when you do
+    nvm install <node_version> with that node version comes npm as well :-)
 
 8.  uninstalling nvm, use following 2 commands 
-  $ nvm use system
-  $ npm uninstall -g a_module
+    - nvm use system
+    - npm uninstall -g a_module
 
 ========================================================================================
 
@@ -75,12 +75,12 @@ JavaScript source code grows.
 
 Here's one way to set it up:
 
-  $ npm init -y in your project folder (don't skip this step!)
-  $ npm install terser
+    npm init -y in your project folder (don't skip this step!)
+    npm install terser
 
 Now, to minify a file called like_button.js, run in the terminal:
-
-  $ npx terser -c -m -o like_button.min.js -- like_button.js
+     
+    npx terser -c -m -o like_button.min.js -- like_button.js
 
 This will produce a file called like_button.min.js with the minified code in the same directory. If you're typing this often, you can create an npm script to give this command a name.
 
